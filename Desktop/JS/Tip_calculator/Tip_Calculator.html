@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Tip_Calculator.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Tip Calculator</h1>
+        <div class="textbox">
+            <p>Bill Amount</p>
+            <input type="number" id="amount" placeholder="Amount to be paid">
+            <p>How is the service level?</p>
+            <input type="radio" id="outstanding" name="serv_level" value="0.30">
+            <label for="outstanding">Outstanding-30%</label><br>
+            <input type="radio" id="good" name="serv_level" value="0.20">
+            <label for="good">Good-20%</label><br>
+            <input type="radio" id="okish" name="serv_level" value="0.15">
+            <label for="okish">OKish-15%</label><br>
+            <input type="radio" id="bad" name="serv_level" value="0.10">
+            <label for="bad">Bad-10%</label><br>
+            <input type="radio" id="nevComBack" name="serv_level" value="0.00">
+            <label for="nevComBack">Never coming back- 0%</label><br>
+            </select>
+            <br>
+            <label for="persons">Choose the number of persons:</label>
+            <select name="persons" id="persons">
+                <option value="one">1</option>
+                <option value="two">2</option>
+                <option value="three">3</option>
+                <option value="four">4</option>
+                <option value="five">5</option>
+                <option value="six">6</option>
+                <option value="seven">7</option>
+                <option value="eigth">8</option>
+                <option value="nine">9</option>
+                <option value="ten">10</option>
+            </select>
+            <button type="button" id="calculate">Calculate the tip amount!</button>
+        </div>
+        <div id="totalTip">
+            <sup>$</sup><span id="tip">0.00</span>
+            <small id="each">each</small>
+        </div>
+    </div>
+</body>
+<script src="Tip_Calculator.js"></script>
+
+</html>
